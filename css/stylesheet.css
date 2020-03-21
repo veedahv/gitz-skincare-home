@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';
+    font-weight: 400;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    padding: 30px 50px;
+    float: left;
+}
+.header img{
+    float: left;
+    margin-left: 50px;
+}
+.header h1{
+    float: left;
+    color: rgb(249,163,146);
+    margin: 0px 50px;
+    font-weight: 200;
+    position: relative;
+}
+small{
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 100;
+    margin-left: -120px;
+    padding: 0px;
+    color: rgb(249,163,146);
+    position: absolute;
+}
+ul{
+    float: right;
+    margin: 20px 70px;
+    padding: 0px 30px;
+}
+li, li a{
+    text-decoration: none;
+    display: inline;
+    color: rgb(249,163,146);
+    padding: 0px 12px;
+}
+.clear{
+    clear: both;
+}
+hr{
+    height: 3px;
+    border: none;
+    background-color: rgb(249,163,146);
+    margin-top: 5px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, 300px);
+}
+
+.first {
+	grid-column: 1 / span 2;
+}
+
+.up {
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/images\ \(1\).jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-column: 3/-1;
+}
+
+.skin {
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/image-3-370x370.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column: 1 / span 1;
+}
+.skin-text {
+	grid-column: 2/ -1;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 10px;
+}
+
+.therapy {
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/3-1-358x393.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
+	grid-column: 3/-1;
+}
+
+.msg-therapy {
+	display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.massage{
+	grid-column: 1 / span 2;
+}
+
+.msg-therapy > div {
+	flex-basis: 30%;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: rgb(241, 115, 90);
+    border: none;
+    cursor: pointer;
+    color: white;
+	border: 3px solid rgb(241, 115, 90);
+    border-radius: 20px;
+
+}
+
+p{
+    text-transform: capitalize;
+}
+.p{
+    text-align: center;
+}
+h4{
+    letter-spacing: 1.5px;
+}
+h2 ,h3{
+	text-align: center;
+	text-transform: capitalize;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    letter-spacing: 1.2px;
+}
